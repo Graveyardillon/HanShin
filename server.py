@@ -27,4 +27,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         data = conn.recv(IMAGE_WIDTH * IMAGE_HEIGHT * 3)
         if not data:
           break
-        logging.info()
+        logging.info(" Received data: " + str(data))
